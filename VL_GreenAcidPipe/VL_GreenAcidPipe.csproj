@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy Cursor.cur $(OutDir)Cursor.curS /Y" />
+    <Exec Command="copy Cursor.cur $(OutDir)Cursor.cur /Y" />
   </Target>
 
 </Project>
