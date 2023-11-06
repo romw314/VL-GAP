@@ -30,6 +30,8 @@ namespace VL_GreenAcidPipe
 			t.Tick += async (_, _) =>
 			{
 				var modUri = webView.Source.AbsoluteUri.Replace("/", "");
+    				if (modUri.Contains("projects"))
+					modUri = "https:vercel.comdashboard";
 				if (!modUri.Contains("new"))
 					deploy = false;
 				urlText.Text = modUri;
